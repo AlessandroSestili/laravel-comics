@@ -20,5 +20,5 @@ Route::get('/', function () {
         'comicsList' => $datiComics
     ];
 
-    return view('home');
+    return view('home', $datiView);
 });
