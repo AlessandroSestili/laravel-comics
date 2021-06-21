@@ -8,3 +8,5 @@
 
 {{-- Creo il contenuto da iniettare nel layout di default --}}
 @section('content')
+
+@endsection
