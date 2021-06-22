@@ -1,86 +1,82 @@
-h1 {
-    height: 100px;
+// NAVBAR
+
+.upper-nav {
+    color: white;
+
+    ul {
+        display: flex;
+        justify-content: flex-end;
+
+    }
+    
+    a {
+        font-size: $font-size/2;
+        font-weight: 600;
+        text-transform: uppercase;
+
+        display: inline-block;
+        padding: $spacing/2 $spacing;
+
+        span {
+            vertical-align: middle;
+        }
+        .fas {
+            vertical-align: initial;
+            margin-left: $spacing/3;
+        }
+    }   
 }
 
-.main-section {
-    background-color: $black;
+nav {
 
-    .flex {
-        flex-wrap: wrap;
+    font-family: $secondary-font-stack;
+    padding: $spacing 0;
+    color: $dark-text-color;
+
+    .nav-container {
+
+        display: flex;
         justify-content: space-between;
-    }
+        align-items: center;
 
-    .card {
-        color: $white;
-        width: 15%;
-        margin: 0 $spacing/2;
-
-        img {
-            width: 100%;
-        }
-
-        a {
-            color: $white;
-        }
-    }
-
-   
-}
-
-.blue-banner {
-    background-color: $brandColor;
-    height: $spacing*3;
-    position: relative;
-
-    img {
-        width: 100%;
-    }
-
-    .single-img-container {
-        width: 12%;
-        position: absolute;
-        bottom: 35%;
-        border: 1px solid $white;
-    }
-
-    .gallery,
-    .type {
-        background-color: $lightblue;
-        color: $white;
-    }
-
-    .gallery {
-        text-align: center;
-        position: absolute;
-        bottom: 0;
-        width: 100%
-    }
-}
-
-.main-info {
-    h2 {
-        color: $darkBlue;
-    }
-
-    .price-container {
-
-        width: 70%;
-
-        .availability,
-        .price {
-            background-color: $priceGreen;
-            color: $white;
-            h4 {
-                padding: $spacing/2 $spacing;;
+        .logo-container {
+            width: 60px;
+            max-width: 10%;
+            min-width: 30px;
+    
+            img {
+                width: 100%;
             }
         }
 
-        .price {
-            flex-grow: 1;
-            justify-content: space-between;
+        ul {
+            text-transform: uppercase;
+            font-weight: 500;
+
+            li {
+                display: inline-block;
+            }
+            
+            a {
+                padding: $spacing/2;
+            }
+        }
+
+        .input-container {
+
+            input {
+                max-width: 100px;
+            }
         }
 
     }
+}
 
-  
+
+// HERO SECTION
+
+.hero {
+    background-image: url("/images/jumbotron.jpg");
+    min-height: 250px;
+    background-size: cover;
 }

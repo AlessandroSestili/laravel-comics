@@ -1,7 +1,8 @@
+//
+@import './partials/variables';
+@import './partials/mixin';
+@import './partials/common';
 
-@import "partials/variables";
-@import "partials/commons";
-@import "partials/nav";
-@import "partials/header";
-@import "partials/main";
-@import "partials/footer";
+@import './partials/header';
+@import './partials/main';
+@import './partials/footer';

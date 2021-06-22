@@ -1,60 +1,99 @@
 <footer>
-    <section class="contacts">
-        <div class="container">
-            <div class="row flex">
-                <div class="col-2">
-                    <ul>
-                        <li>DC COMICS</li>
-                        <li><a href="#">Characters</a></li>
-                        <li><a href="#">Comics</a></li>
-                        <li><a href="#">Movies</a></li>
-                        <li><a href="#">TV</a></li>
-                        <li><a href="#">Games</a></li>
-                        <li><a href="#">Videos</a></li>
-                        <li><a href="#">News</a></li>
-                    </ul>
 
-                    <ul>
-                        <li>SHOP</li>
-                        <li><a href="#">Shop DC</a></li>
-                        <li><a href="#">Shop DC Collectibles</a></li>
-                    </ul>
-                </div>
+    <section class="upper-footer">
+        <div class="wrapper">
+        
+            <div class="left-sect">
 
-                <div class="col-2">
-                    <ul>
-                        <li>DC</li>
-                        <li><a href="#">Terms Of Use</a></li>
-                        <li><a href="#">Privacy policy (News)</a></li>
-                        <li><a href="#">Ad Choice</a></li>
-                        <li><a href="#">Advertising</a></li>
-                        <li><a href="#">Jobs</a></li>
-                        <li><a href="#">Subscriptions</a></li>
-                        <li><a href="#">Talent Workshops</a></li>
-                        <li><a href="#">CPSC Certificates</a></li>
-                        <li><a href="#">Ratings</a></li>
-                        <li><a href="#">Shop Help</a></li>
-                        <li><a href="#">Contact Us</a></li>
-                    </ul>
-                </div>
+                <ul>
+                    <h6>DC Comics</h6>  
+                    <li v-for="link in navLinks">
+                        <a :href="link.link" :class="{'title-style': link.child}">
+                            @{{link.text}}
+                        </a>
 
-                <div class="col-2">
-                    <ul>
-                        <li>SITES</li>
-                        <li><a href="#">DC</a></li>
-                        <li><a href="#">MAD Magazine</a></li>
-                        <li><a href="#">DC Kids</a></li>
-                        <li><a href="#">DC Universe</a></li>
-                        <li><a href="#">DC Power Visa</a></li>
-                    </ul>
-                </div>
+                        <ul>
+
+                            <li v-for="childLink in link.child">
+                                <a :href="childLink.link">
+                                    @{{ childLink.text }}
+                                </a>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                </ul>
+
+                <ul>
+                    <h6>
+                        DC
+                    </h6>
+                    <li v-for="link in dcLinks">
+                        <a :href="link.link">
+                            @{{ link.text }}
+                        </a>
+                    </li>
+                
+                </ul>
+
+                <ul>
+                    <h6>
+                        Sites
+                    </h6>
+                    <li v-for="link in sitesLinks">
+                        <a :href="link.link">
+                            @{{ link.text }}
+                        </a>
+                    </li>
+                
+                </ul>
+                
+            </div>
+            <div>
+                <span>All Site Content TM and © 2020 DC Entertainment, unless otherwise noted here. All rights reserved. Cookies Settings</span>
             </div>
 
-            <p>All Site Content TN and <i class="far fa-copyright"></i> 2020 DC Enrertainment, unless uotherwise <a href="#">noted here</a>. All right reserved.</p>
-            <a href="#">Cookies Settings</a>
+        </div>
+    </section>
+    
+    <section class="below-footer">
+        <div class="wrapper">
+            <button class="btn secondary-btn">
+                Sign-up now
+            </button>
+            <div class="social-links">
+                <h6>Follow us</h6>
+
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="{{asset('images/footer-facebook.png')}}" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="{{asset('images/footer-twitter.png')}}" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="{{asset('images/footer-youtube.png')}}" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="{{asset('images/footer-pinterest.png')}}" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="{{asset('images/footer-periscope.png')}}" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </section>
 
-    <section class="socials">
-    </section>
 </footer>
