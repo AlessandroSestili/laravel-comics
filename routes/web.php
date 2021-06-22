@@ -21,4 +21,20 @@ Route::get('/', function () {
     ];
 
     return view('home', $datiView);
-});
+})->name('comics');
+
+Route::get('/product/{index}', function ($index) {
+    $datiComics = config('comics');
+
+    $comicCliccato = $datiComics[intval($index)];
+
+    if(!is_numeric($index) || $index < 0 || $index > count($datiComics)) {
+        abort(404, "Not found");
+    }
+
+    $datiSingoloComic = [
+        'comic' => $comicCliccato
+    ];
+
+    return view('singleProduct', $datiSingoloComic);
+})->name('singolo-comic');

@@ -1,4 +1,4 @@
-@extends('layouts.default')
+@extends('layout.default')
 
 @section('page_title', 'Dettagli Comic')
 

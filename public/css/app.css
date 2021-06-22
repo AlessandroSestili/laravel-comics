@@ -1,0 +1,276 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+body {
+  font-family: "PT Sans Narrow", sans-serif;
+}
+
+.flex {
+  display: flex;
+}
+
+a {
+  text-decoration: none;
+}
+
+.responsive-img {
+  height: 100%;
+}
+
+ul {
+  list-style-type: none;
+}
+
+section {
+  padding: 20px 0;
+}
+
+.nav-banner {
+  height: 25px;
+  background-color: #0182f9;
+  color: #ffffff;
+}
+
+.nav-banner a {
+  color: #ffffff;
+  padding-left: 40px;
+}
+
+.nav-banner .flex {
+  justify-content: flex-end;
+}
+
+nav {
+  height: 80px;
+}
+
+nav ul span {
+  color: #0182f9;
+}
+
+nav ul li {
+  padding: 0 10px;
+}
+
+nav ul li a {
+  color: #8c8c8c;
+}
+
+nav ul li .active {
+  color: #0182f9;
+}
+
+nav .logo-container {
+  height: 80px;
+  padding: 10px;
+}
+
+nav .flex {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.jumbotron {
+  height: 320px;
+  background-image: url(/images/jumbotron.jpg?1b0a3671766964a4114f90322970b124);
+  background-size: cover;
+}
+
+h1 {
+  height: 100px;
+}
+
+.main-section {
+  background-color: #000000;
+}
+
+.main-section .flex {
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.main-section .card {
+  color: #ffffff;
+  width: 15%;
+  margin: 0 10px;
+}
+
+.main-section .card img {
+  width: 100%;
+}
+
+.main-section .card a {
+  color: #ffffff;
+}
+
+.blue-banner {
+  background-color: #0182f9;
+  height: 60px;
+  position: relative;
+}
+
+.blue-banner img {
+  width: 100%;
+}
+
+.blue-banner .single-img-container {
+  width: 12%;
+  position: absolute;
+  bottom: 35%;
+  border: 1px solid #ffffff;
+}
+
+.blue-banner .gallery,
+.blue-banner .type {
+  background-color: #00a9d9;
+  color: #ffffff;
+}
+
+.blue-banner .gallery {
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.main-info h2 {
+  color: #013f62;
+}
+
+.main-info .price-container {
+  width: 70%;
+}
+
+.main-info .price-container .availability,
+.main-info .price-container .price {
+  background-color: #55ba59;
+  color: #ffffff;
+}
+
+.main-info .price-container .availability h4,
+.main-info .price-container .price h4 {
+  padding: 10px 20px;
+}
+
+.main-info .price-container .price {
+  flex-grow: 1;
+  justify-content: space-between;
+}
+
+h1 {
+  height: 100px;
+}
+
+.main-section {
+  background-color: #000000;
+}
+
+.main-section .flex {
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.main-section .card {
+  color: #ffffff;
+  width: 15%;
+  margin: 0 10px;
+}
+
+.main-section .card img {
+  width: 100%;
+}
+
+.main-section .card a {
+  color: #ffffff;
+}
+
+.blue-banner {
+  background-color: #0182f9;
+  height: 60px;
+  position: relative;
+}
+
+.blue-banner img {
+  width: 100%;
+}
+
+.blue-banner .single-img-container {
+  width: 12%;
+  position: absolute;
+  bottom: 35%;
+  border: 1px solid #ffffff;
+}
+
+.blue-banner .gallery,
+.blue-banner .type {
+  background-color: #00a9d9;
+  color: #ffffff;
+}
+
+.blue-banner .gallery {
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.main-info h2 {
+  color: #013f62;
+}
+
+.main-info .price-container {
+  width: 70%;
+}
+
+.main-info .price-container .availability,
+.main-info .price-container .price {
+  background-color: #55ba59;
+  color: #ffffff;
+}
+
+.main-info .price-container .availability h4,
+.main-info .price-container .price h4 {
+  padding: 10px 20px;
+}
+
+.main-info .price-container .price {
+  flex-grow: 1;
+  justify-content: space-between;
+}
+
+footer .contacts {
+  background-image: url(/images/footer-bg.jpg?dfd68d2946f211e1b678af05fd2f830b);
+}
+
+footer .contacts ul {
+  margin: 20px, 40px, 20px, 0;
+}
+
+footer .contacts ul li:first-of-type {
+  color: #ffffff;
+  font-size: 20px;
+  padding: 20px 0;
+}
+
+footer .contacts ul li a {
+  color: #8c8c8c;
+}
+
+footer .contacts p {
+  color: #8c8c8c;
+  padding-top: 20px;
+}
+
+footer .socials {
+  height: 200px;
+  background-color: #303030;
+}
+
