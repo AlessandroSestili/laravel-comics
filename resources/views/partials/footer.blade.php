@@ -55,7 +55,7 @@
                 <a href=""><img src="{{asset("images/footer-facebook.png")}}" alt="fb"></a>
                 <a href=""><img src="{{asset("images/footer-twitter.png")}}" alt="tw"></a>
                 <a href=""><img src="{{asset("images/footer-youtube.png")}}" alt="yt"></a>
-                <a href=""><img src="{{asset("images/footer-pinterest.png")}}" alt="pint"></a>
+                <a href=""><img src="{{asset("images/footer-pinterest.png")}}" alt="pinterest"></a>
                 <a href=""><img src="{{asset("images/footer-periscope.png")}}" alt="periscope"></a>
             </div>
         </div>
