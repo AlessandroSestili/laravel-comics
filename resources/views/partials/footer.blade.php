@@ -1,99 +1,63 @@
 <footer>
-
-    <section class="upper-footer">
-        <div class="wrapper">
-        
-            <div class="left-sect">
-
-                <ul>
-                    <h6>DC Comics</h6>  
-                    <li v-for="link in navLinks">
-                        <a :href="link.link" :class="{'title-style': link.child}">
-                            @{{link.text}}
-                        </a>
-
-                        <ul>
-
-                            <li v-for="childLink in link.child">
-                                <a :href="childLink.link">
-                                    @{{ childLink.text }}
-                                </a>
-                            </li>
-
-                        </ul>
-                    </li>
-
-                </ul>
-
-                <ul>
-                    <h6>
-                        DC
-                    </h6>
-                    <li v-for="link in dcLinks">
-                        <a :href="link.link">
-                            @{{ link.text }}
-                        </a>
-                    </li>
-                
-                </ul>
-
-                <ul>
-                    <h6>
-                        Sites
-                    </h6>
-                    <li v-for="link in sitesLinks">
-                        <a :href="link.link">
-                            @{{ link.text }}
-                        </a>
-                    </li>
-                
-                </ul>
-                
+    <div class="footer-bg">
+        <div class="container">
+            <div class="half-info">
+                <div class="info">
+                    <h2>DC COMICS</h2>
+                    <small>characters</small>
+                    <small>comics</small>
+                    <small>lorem</small>
+                    <small>lorem</small>
+                    <small>lorem</small>
+                    <small>lorem</small>
+                    <small>lorem</small>
+                    <h2 class="halfway">SHOP</h2>
+                    <small>shop</small>
+                    <small>comics</small>
+                </div>
+                <div class="info">
+                    <h2>DC</h2>
+                    <small>characters</small>
+                    <small>comics</small>
+                    <small>lorem</small>
+                    <small>lorem</small>
+                    <small>lorem</small>
+                    <small>lorem</small>
+                    <small>lorem</small>
+                </div>
+                <div class="info">
+                    <h2>SITES</h2>
+                    <small>characters</small>
+                    <small>comics</small>
+                    <small>lorem</small>
+                    <small>lorem</small>
+                    <small>lorem</small>
+                    <small>lorem</small>
+                    <small>lorem</small>
+                </div>
             </div>
-            <div>
-                <span>All Site Content TM and © 2020 DC Entertainment, unless otherwise noted here. All rights reserved. Cookies Settings</span>
+            <div class="down-info">
+                <small>All site content TM and 2020 dc entertainment, unless otherwise <a href="">noted here</a>. All rights reserved. <br><a href="">cookies setting</a></small>
+            </div>
+            <div class="half-info-r">
+                <img src="{{ asset('images/dc-logo-bg.png') }}" alt="">
             </div>
 
         </div>
-    </section>
-    
-    <section class="below-footer">
-        <div class="wrapper">
-            <button class="btn secondary-btn">
-                Sign-up now
-            </button>
-            <div class="social-links">
-                <h6>Follow us</h6>
-
-                <ul>
-                    <li>
-                        <a href="#">
-                            <img src="{{asset('images/footer-facebook.png')}}" alt="">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="{{asset('images/footer-twitter.png')}}" alt="">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="{{asset('images/footer-youtube.png')}}" alt="">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="{{asset('images/footer-pinterest.png')}}" alt="">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="{{asset('images/footer-periscope.png')}}" alt="">
-                        </a>
-                    </li>
-                </ul>
+    </div>
+    <div class="footer-nav-bg">
+        <div class="container footer-bar">
+            <div class="sign-up-button">
+                <p> <a href="">SIGN-UP NOW!</a> </p>
+            </div>
+            <div class="follow-us">
+                <a href="#">FOLLOW US</a>
+                <a href=""><img src="{{asset("images/footer-facebook.png")}}" alt="fb"></a>
+                <a href=""><img src="{{asset("images/footer-twitter.png")}}" alt="tw"></a>
+                <a href=""><img src="{{asset("images/footer-youtube.png")}}" alt="yt"></a>
+                <a href=""><img src="{{asset("images/footer-pinterest.png")}}" alt="pint"></a>
+                <a href=""><img src="{{asset("images/footer-periscope.png")}}" alt="periscope"></a>
             </div>
         </div>
-    </section>
-
+    </div>
 </footer>

@@ -13,28 +13,36 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    $datiComics = config('comics');
+Route::get('/', function(){
+    $comics = config("comics");
 
-    $datiView = [
-        'comicsList' => $datiComics
-    ];
+    return view("landings.welcome", ["comics" => $comics]);
+})->name("pagina-comics");
 
-    return view('home', $datiView);
-})->name('comics');
+Route::get("/comics-info/{id}", function($id){
+    
+    $comics = config("comics");
 
-Route::get('/product/{index}', function ($index) {
-    $datiComics = config('comics');
+    if(!is_numeric($id) || $id < 0){
+        abort(404, "inexisting product");
+    }
+    
 
-    $comicCliccato = $datiComics[intval($index)];
+    $prodotto = null;
 
-    if(!is_numeric($index) || $index < 0 || $index > count($datiComics)) {
-        abort(404, "Not found");
+    foreach ($comics as $prod){
+        if($prod["id"] === intval($id)){
+            $prodotto = $prod;
+        }
     }
 
-    $datiSingoloComic = [
-        'comic' => $comicCliccato
-    ];
+    if(is_null($prodotto)){
+        abort(404, "prodotto non disponibile");
+    }
 
-    return view('singleProduct', $datiSingoloComic);
-})->name('singolo-comic');
+    $comicChoice = $comics[intval($id)];
+
+    return view("landings.comics", [
+        "comic" => $comicChoice
+    ]);
+})->name("comics-info");

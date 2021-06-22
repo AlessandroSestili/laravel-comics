@@ -1,0 +1,157 @@
+.blue-bar {
+    background-color: $backgroud-blue;
+    height: 100px;
+    position: relative;
+    .comic-view {
+        height: 300px;
+        width: 200px;
+        position: absolute;
+        top: -250px;
+        left: 17%;
+
+        small {
+            background-color: #00a9d9;
+            color: white;
+            font-size: 15px;
+        }
+        .top {
+            position: absolute;
+        }
+        .bottom {
+            position: absolute;
+            right: 8px;
+            bottom: 9px;
+            width: 96%;
+            text-align: center;
+        }
+    }
+}
+
+.full {
+    border-bottom: 1px solid rgb(155, 160, 160);
+    padding-bottom: 24px;
+
+    .container-less {
+        width: 65%;
+        margin: auto;
+        .single-comic {
+            padding: 24px 0;
+            display: flex;
+            justify-content: space-between;
+            .comics-info {
+                width: calc(100% / 2);
+                h1 {
+                    color: #003f5e;
+                    padding-top: 30px;
+                    padding-bottom: 24px;
+                }
+                p {
+                    line-height: 28px;
+                    color: darkslategrey;
+                }
+                .price {
+                    display: flex;
+                    line-height: 50px;
+                    padding-bottom: 24px;
+                    .us-price {
+                        box-shadow: 1px 1px black;
+                        width: 450px;
+                        background-color: #55ba59;
+                        padding-left: 14px;
+                        color: #baf980;
+
+                        .white {
+                            color: white;
+                        }
+                        .two {
+                            float: right;
+                            padding-right: 14px;
+                        }
+                    }
+                    .check-available {
+                        border-left: 1px solid black;
+                        box-shadow: 1px 1px black;
+                        width: 200px;
+                        background-color: #55ba59;
+                        color: white;
+                        text-align: center;
+                        font-weight: 500;
+                    }
+                }
+            }
+
+            .advertisement {
+                width: calc(100% / 3);
+                h3 {
+                    padding-left: 150px;
+                    color: darkslategrey;
+                }
+            }
+        }
+    }
+}
+.container-splitter {
+    background-color: #f6f6f6;
+    .splitter {
+        padding: 24px 0;
+        display: flex;
+        width: 65%;
+        margin: auto;
+        justify-content: space-between;
+        .half {
+            width: calc(100% / 2.05);
+            height: 300px;
+            h2 {
+                padding: 24px 0;
+            }
+            .content {
+                display: flex;
+                justify-content: space-between;
+                border-bottom: 1px solid rgb(190, 192, 192);
+                padding-bottom: 16px;
+                padding-top: 16px;
+                .title {
+                    width: 20%;
+                    p {
+                        margin-right: 50px;
+                        display: inline;
+                    }
+                }
+                .title-text {
+                    width: 70%;
+                    a {
+                        text-decoration: none;
+                        color: $backgroud-blue;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.comic-bar {
+    background-color: #f6f6f6;
+    .h100 {
+        display: flex;
+        width: 65%;
+        margin: auto;
+        align-items: center;
+        .details {
+            width: calc(100% / 4);
+            padding: 18px 12px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-left: 1px solid rgb(190, 192, 192);
+            border-right: 1px solid rgb(190, 192, 192);
+            height: 100%;
+            p{
+                text-align: center;
+                color: rgb(155, 167, 167);
+            }
+            img{
+                height: 60px;
+            }
+        }
+    }
+}
