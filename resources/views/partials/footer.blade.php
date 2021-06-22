@@ -27,17 +27,17 @@
                     <small>CPSC Certificates</small>
                     <small>Ratings</small>
                     <small>Shop Help</small>
+                    <small>Contact Us</small>
+
 
                 </div>
                 <div class="info">
                     <h2>SITES</h2>
-                    <small>characters</small>
-                    <small>comics</small>
-                    <small>lorem</small>
-                    <small>lorem</small>
-                    <small>lorem</small>
-                    <small>lorem</small>
-                    <small>lorem</small>
+                    <small>DC</small>
+                    <small>MAD Magazines</small>
+                    <small>DC Kids</small>
+                    <small>DC Univers</small>
+                    <small>DC PowerVisa</small>
                 </div>
             </div>
             <div class="down-info">
