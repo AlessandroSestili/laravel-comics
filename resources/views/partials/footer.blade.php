@@ -4,16 +4,16 @@
             <div class="half-info">
                 <div class="info">
                     <h2>DC COMICS</h2>
-                    <small>characters</small>
-                    <small>comics</small>
-                    <small>lorem</small>
-                    <small>lorem</small>
-                    <small>lorem</small>
-                    <small>lorem</small>
-                    <small>lorem</small>
+                    <small>Characters</small>
+                    <small>Comics</small>
+                    <small>Movies</small>
+                    <small>TV</small>
+                    <small>Games</small>
+                    <small>Video</small>
+                    <small>News</small>
                     <h2 class="halfway">SHOP</h2>
-                    <small>shop</small>
-                    <small>comics</small>
+                    <small>Shop DC</small>
+                    <small>Shop DC Collectibles</small>
                 </div>
                 <div class="info">
                     <h2>DC</h2>
