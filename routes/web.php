@@ -19,11 +19,11 @@ Route::get('/', function(){
     return view("landings.welcome", ["comics" => $comics]);
 })->name("pagina-comics");
 
-Route::get("/comics-info/{index}", function($id){
+Route::get("/comics-info/{id}", function($id){
     
     $comics = config("comics");
 
-    if(!is_numeric($id) || $id < 1){
+    if(!is_numeric($id) || $id < 0){
         abort(404, "inexisting product");
     }
     
