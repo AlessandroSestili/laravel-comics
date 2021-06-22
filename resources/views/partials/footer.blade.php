@@ -17,13 +17,17 @@
                 </div>
                 <div class="info">
                     <h2>DC</h2>
-                    <small>characters</small>
-                    <small>comics</small>
-                    <small>lorem</small>
-                    <small>lorem</small>
-                    <small>lorem</small>
-                    <small>lorem</small>
-                    <small>lorem</small>
+                    <small>Terms of Use</small>
+                    <small>Privacy Policy (New)</small>
+                    <small>Ad Choices</small>
+                    <small>Advertising</small>
+                    <small>Jobs</small>
+                    <small>Subscriptions</small>
+                    <small>Talent Workshop</small>
+                    <small>CPSC Certificates</small>
+                    <small>Ratings</small>
+                    <small>Shop Help</small>
+
                 </div>
                 <div class="info">
                     <h2>SITES</h2>
